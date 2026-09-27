@@ -21,7 +21,7 @@ def main():
         if choice == '1':
             add()
         elif choice == '2':
-            print("Subtraction feature coming soon...")
+            subtract()
         elif choice == '3':
             print("Multiplication feature coming soon...")
         elif choice == '4':
