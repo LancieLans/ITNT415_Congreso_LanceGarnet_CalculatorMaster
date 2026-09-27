@@ -12,6 +12,16 @@ def multiply():
         print(f"Result: {num1} * {num2} = {num1 * num2}")
     except ValueError:
         print("Error: Invalid numeric input provided.")
+def divide():
+    try:
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        if num2 == 0:
+            print("Error: Division by zero is not allowed.")
+        else:
+            print(f"Result: {num1} / {num2} = {num1 / num2}")
+    except ValueError:
+        print("Error: Invalid numeric input provided.")
 def main():
     while True:
         print("\n==============================")
@@ -32,7 +42,7 @@ def main():
         elif choice == '3':
             multiply()
         elif choice == '4':
-            print("Division feature coming soon...")
+         divide()
         elif choice == '5':
             print("Exiting calculator. Goodbye!")
             break
