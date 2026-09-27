@@ -5,6 +5,13 @@ def add():
         print(f"Result: {num1} + {num2} = {num1 + num2}")
     except ValueError:
         print("Error: Invalid numeric input provided.")
+def multiply():
+    try:
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        print(f"Result: {num1} * {num2} = {num1 * num2}")
+    except ValueError:
+        print("Error: Invalid numeric input provided.")
 def main():
     while True:
         print("\n==============================")
@@ -23,7 +30,7 @@ def main():
         elif choice == '2':
             subtract()
         elif choice == '3':
-            print("Multiplication feature coming soon...")
+            multiply()
         elif choice == '4':
             print("Division feature coming soon...")
         elif choice == '5':
