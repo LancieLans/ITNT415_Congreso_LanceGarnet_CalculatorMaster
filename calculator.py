@@ -1,3 +1,10 @@
+def add():
+    try:
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        print(f"Result: {num1} + {num2} = {num1 + num2}")
+    except ValueError:
+        print("Error: Invalid numeric input provided.")
 def main():
     while True:
         print("\n==============================")
@@ -12,7 +19,7 @@ def main():
         choice = input("Enter your choice (1-5): ").strip()
         
         if choice == '1':
-            print("Addition feature coming soon...")
+            add()
         elif choice == '2':
             print("Subtraction feature coming soon...")
         elif choice == '3':
